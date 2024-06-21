@@ -18,7 +18,7 @@ int main () {
 
     while(fscanf(teste, "%f,%f,%f,%f,%d", &teste1, &teste2, &teste3, &teste4, &classeRTeste)!= EOF){
      float distMin = 10000;
-     rewind(treino);
+     treino= fopen("iristreino.txt","r");
 
         while(fscanf(treino,"%f,%f,%f,%f,%d", &treino1, &treino2, &treino3, &treino4, &classeRTreino) != EOF){
 
